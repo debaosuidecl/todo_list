@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: rgb(22, 22, 22)
+}
+.background{
+    background: url('day.jpg');
+    background-size: cover;
+    /* height: 200px */
+}
+
+.container {
+    margin: 20px auto;
+
+    max-width: 1000px
+}
+.container h2{
+    text-align: center;
+    color: white;
+}
+.card{
+    position: relative;
+    max-width: 400px;
+    margin: 90px auto 0px;
+    background: #111;
+    min-height: 600px;
+    display: flex;
+    flex-flow: column;
+    /* box-shadow: 1px 0px 14px #eee; */
+}
+
+
+.input-cont{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.input-cont input{
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    padding: 14px;
+    background: #222;
+    color: white;
+    outline-width: 3px;
+    outline-color: teal;
+    border-radius: 20px
+}
+
+
+.addtodo{
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    background: teal;
+}
+.addtodo span{
+    font-size: 20px;
+}
+#list{
+    flex: 1;
+    padding: 15px;
+
+}
+
+#list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* transition: 2s; */
+
+    animation: animateItem .5s ease-out;
+    
+    
+}
+
+.circle {
+    border: 2px solid white;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    
+}
+
+.text{
+    flex: 1;
+    color: white;
+    padding: 6px
+}
+.background h2{
+    padding: 10px;
+}
+.delete{
+    color: crimson;
+    cursor: pointer;
+}
+
+.cross-style{
+    text-decoration: line-through;
+    color: #666;
+    transition: .3s;
+}
+
+.rotateDisappear{
+    transform: rotateX(90deg);
+    transition: .3s;
+}
+
+#clock {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #date {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+
+
+
+  }
+@keyframes animateItem{
+    0%{
+        opacity: 0;
+        transform: rotateX(90deg);
+
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+
+    }
+}
