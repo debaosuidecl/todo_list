@@ -22,8 +22,6 @@ function submitHandler(e){
     let item = document.createElement("li")
 
     item.className = "item"
-    let uniqueID = "fsdf" 
-    item.id = uniqueID;
     item.innerHTML = `      
                 
     <div class="circle"></div>
